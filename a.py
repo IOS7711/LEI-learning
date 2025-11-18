@@ -17,7 +17,7 @@ class student:
 
     def print_scores(self):
         print(f"学生姓名: {self.name}, 学号: {self.student_id}")
-        for subject, score in self.scores.items():
+        for subject, score in self.scores.items():  ##调用  self.scores.items()  后，会返回一个可迭代的对象，这个对象包含了字典中所有的键值对
             print(f"{subject} 成绩: {score}")
 chen = student("小成","20254330301")
 chen.set_score("语文", 85)
